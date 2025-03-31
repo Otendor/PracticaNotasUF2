@@ -46,6 +46,13 @@ public class notas {
     Scanner entrada = new Scanner(System.in);
 
     /**
+     * Muestra un mensaje de bienvenida.
+     */
+    public void saludo() {
+        System.out.println("¡Bienvenido a la práctica de notas UF2!");
+    }
+
+    /**
      * Pide al usuario que ingrese las notas.
      */
     public void IngresaNotas() {
@@ -111,6 +118,7 @@ public class notas {
      */
     public static void main(String[] args) {
         notas fc = new notas();
+        fc.saludo(); // <-- esta línea es nueva
         fc.IngresaNotas();
         fc.comprobarcion();
         fc.Calculonotas();
